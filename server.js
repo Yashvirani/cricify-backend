@@ -25,7 +25,8 @@ mongoose
   .catch((err) => {
     console.log(err.message);
   });
-
+console.log(process.env.ACCESS_KEY_ID);
+console.log(process.env.SECRET_ACCESS_KEY);
 app.use('/api/uploads', uploadRouter);
 app.use('/api/users', userRouter);
 app.use('/api/products', productRouter);
